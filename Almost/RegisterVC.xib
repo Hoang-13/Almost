@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterVC" customModule="Almost" customModuleProvider="target">
+            <connections>
+                <outlet property="tfREmail" destination="0y3-H3-4ow" id="PlM-3f-fQY"/>
+                <outlet property="tfpassword" destination="Q11-Du-COT" id="v1S-TQ-2MX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0y3-H3-4ow">
+                    <rect key="frame" x="40" y="244" width="334" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q11-Du-COT">
+                    <rect key="frame" x="40" y="298" width="334" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgM-oP-E6n">
+                    <rect key="frame" x="60" y="402" width="294" height="36"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Resgister">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="OnTapRegister:" destination="-1" eventType="touchUpInside" id="1bI-fQ-h0y"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QgM-oP-E6n" firstAttribute="top" secondItem="Q11-Du-COT" secondAttribute="bottom" constant="70" id="5ii-NC-ksS"/>
+                <constraint firstItem="0y3-H3-4ow" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="AjA-hI-Zwy"/>
+                <constraint firstItem="0y3-H3-4ow" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="CYg-50-OhO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Q11-Du-COT" secondAttribute="trailing" constant="40" id="FRD-0a-jzc"/>
+                <constraint firstItem="Q11-Du-COT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="MZQ-zq-kRY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0y3-H3-4ow" secondAttribute="trailing" constant="40" id="WdO-NK-2ud"/>
+                <constraint firstItem="QgM-oP-E6n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="d6G-JW-wrL"/>
+                <constraint firstItem="Q11-Du-COT" firstAttribute="top" secondItem="0y3-H3-4ow" secondAttribute="bottom" constant="20" id="jzk-en-sDR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QgM-oP-E6n" secondAttribute="trailing" constant="60" id="ntk-eo-9rg"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="50"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
